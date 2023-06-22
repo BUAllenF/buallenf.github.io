@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="headerproj">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">HOME</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/motion.jpg">
+                <div class="layer">
+                    <h3>Motion Sensing Nightlight</h3>
+                    <p>Illuminate your nightstand with your hand</p>
+                    <a href="motion.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/door1.jpg">
+                <div class="layer">
+                    <h3>Keycard Door Access</h3>
+                    <p>Keep your room secure with a keycard entry</p>
+                    <a href="door.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/temp1.jpg">
+                <div class="layer">
+                    <h3>Temperature Alarm System</h3>
+                    <p>Be alerted of any changes in your environment</p>
+                    <a href="temp.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/candy2.jpg">
+                <div class="layer">
+                    <h3>Math Candy Game</h3>
+                    <p>Answer a math question for a candy</p>
+                    <a href="candy.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/geo.png">
+                <div class="layer">
+                    <h3>Safe Streets for Boston Bikers</h3>
+                    <p>Using machine learning to help Boston's bikers</p>
+                    <a href="matlab.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+    
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+  </script>
+</body>
+</html>

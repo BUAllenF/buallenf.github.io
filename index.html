@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Engineering Student</p>
+            <h1>Welcome To My<br><span>Portfolio</span></h1>
+        </div>
+    </div>
+  </div>  
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/picture.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>CAD Software</span><br>Fusion 360 <br>OnShape <br>Autodesk Inventor</li>
+                        <li><span>Electronics</span><br>Circuit Design <br>3D Printing <br>Robotics</li>
+                        <li><span>Programming</span><br>MATLAB <br>C/C++ <br>Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Boston University Research Intern</span><br>Raman Spectroscopy Labratory <br>01/23 - 05/23</li>
+                        <li><span>Advanced Engineering & EDM Intern</span><br>Manufacturing Engineering <br>07/19 - 08/19</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Boston University</span><br>Mechanical Engineering <br>Class of 2026</li>
+                        <li><span>Staten Island Technical Highschool</span><br>Class of 2022 </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Portfolio -->
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/motion.jpg">
+                <div class="layer">
+                    <h3>Motion Sensing Nightlight</h3>
+                    <p>Illuminate your nightstand with your hand</p>
+                    <a href="motion.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/door1.jpg">
+                <div class="layer">
+                    <h3>Keycard Door Access</h3>
+                    <p>Keep your room secure with a keycard entry</p>
+                    <a href="door.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/temp1.jpg">
+                <div class="layer">
+                    <h3>Temperature Alarm System</h3>
+                    <p>Be alerted of any changes in your environment</p>
+                    <a href="temp.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="viewmore.html" class="btn">View More</a>
+    </div>
+  </div>
+
+  <!-- Contact-->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contactinfo">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fas fa-envelope"></i> allen.fraiman@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 347-254-2844</p>
+          <div class="social-icons">
+            
+            <!-- Add the following lines for email and phone icons -->
+            <a href="https://www.linkedin.com/in/allen-fraiman-503550264/" class="link-link">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            <a href="mailto:your-email@example.com" class="email-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+              
+              
+            <i class="fas fa-phone"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+  </script>
+</body>
+</html>
