@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'CooperHewitt-Bold';
-    src: url('https://github.com/BUAllenF/buallenf.github.io/blob/main/fonts/COOPERHEWITT-BOLD.TTF') format('truetype');
+    src: url('fonts/CooperHewitt-Bold.ttf') format('truetype');
     /* Add any additional font properties here, like font-weight or font-style */
 }
 
@@ -27,6 +27,8 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: 'CooperHewitt-Bold', sans-serif;
+;
 
 }
 
