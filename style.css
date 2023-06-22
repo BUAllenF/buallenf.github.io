@@ -73,6 +73,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 30px;
     font-family: 'CooperHewitt-Bold', sans-serif;
+    font-weight: 600;
     position: relative;
 }
 
