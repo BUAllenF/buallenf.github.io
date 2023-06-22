@@ -435,7 +435,7 @@ nav .fas{
 
   @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/backgroundphone.png);
+        background-image: none;
         background-attachment: fixed;
 
     }
