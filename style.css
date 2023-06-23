@@ -436,7 +436,7 @@ nav .fas{
 
 }
 
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 900px){
     #header{
         background-image: none;
         background-attachment: fixed;
