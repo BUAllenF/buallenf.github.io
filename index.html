@@ -21,6 +21,7 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contact">CONTACT</a></li>
+                <li><a href="resume.pdf" download>RESUME</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -44,28 +45,31 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>Welcome to my website! I'm Allen Fraiman, a Mechanical Engineering major at Boston University with a passion for robotics. Join me as I explore the exciting world of engineering and share my projects. Thanks for visiting!</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                
+                <div class="tab-contents active-tab" id="experience">
                     <ul>
-                        <li><span>CAD Software</span><br>SolidWorks <br>OnShape <br>Autodesk Inventor</li>
-                        <li><span>Electronics</span><br>Circuit Design <br>3D Printing <br>Robotics</li>
-                        <li><span>Programming</span><br>MATLAB <br>C/C++ <br>Python</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Boston University Research Intern</span><br>Raman Spectroscopy Labratory <br>01/23 - 05/23</li>
-                        <li><span>Advanced Engineering & EDM Intern</span><br>Manufacturing Engineering <br>07/22</li>
+                        <li><span>Regeneron Pharmaceuticals</span><br>Mid-scale Manufacturing Department <br>05/24 - 08/24</li>
+                        <li><span>Boston University College of Engineering</span><br>Albro Laboratory <br>01/24 - 05/24</li>
+                        <li><span>Boston University Department of Chemistry</span><br>Ziegler Raman Spectroscopy Labratory <br>01/23 - 05/23</li>
+                        
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Boston University</span><br>Mechanical Engineering <br>Class of 2026</li>
+                        <li><span>Boston University</span><br>B.Sc Mechanical Engineering, Concentration in Robotics <br>Class of 2026</li>
                         <li><span>Staten Island Technical Highschool</span><br>Class of 2022 </li>
                         
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>CAD Software</span><br>SolidWorks <br>OnShape <br>Autodesk Inventor</li>
+                        <li><span>Electronics</span><br>Circuit Design <br>3D Printing <br>Robotics</li>
+                        <li><span>Programming</span><br>MATLAB <br>C/C++ <br>Python</li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +108,7 @@
             </div>
             
         </div>
-        <a href="viewmore.html" class="btn">View More</a>
+        <a href="viewmore.html" class="btn">VIEW MORE</a>
     </div>
   </div>
 
@@ -113,9 +117,10 @@
     <div class="container">
       <div class="row">
         <div class="contactinfo">
-          <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fas fa-envelope"></i> allen.fraiman@gmail.com</p>
-          <p><i class="fas fa-phone"></i> 347-254-2844</p>
+          <h1 class="sub-title">Contact Information</h1>
+          
+          <p><i class="fas fa-envelope"></i>&nbsp;allen.fraiman@gmail.com</p>
+          
           <div class="social-icons">
             
             <!-- Add the following lines for email and phone icons -->
@@ -127,8 +132,9 @@
               </a>
               
               
-            <i class="fas fa-phone"></i>
+            
           </div>
+          
         </div>
       </div>
     </div>
