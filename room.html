@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="headerproj">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">HOME</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<div id="materials">
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-1">
+                <img src="images/room1.png" alt="">
+            </div>
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Room Occupancy Monitor</h1>
+                <p>Introducing the Room Occupancy Monitor - a system that can sense how many occupants are in a room at a given time. When the user-set maximum occupancy is reached, a stop sign is deployed alongisde a buzzing sound to indicate that the room should not be entered. This ensures that the room maintains a safe occupancy level and complies with relevant safety regulations for the specific environment.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row1">
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Materials</h1>
+                <ul class="materials">
+                    <li>Arduino UNO</li>
+                    <li>Ultrasonic Motion Sensors</li>
+                    <li>LCD Screen</li>
+                    <li>3D Printed Battery Holder, Sensor Rack, Motor Case, Stop Sign</li>
+                    <li>28BYJ-48 Stepper Motor + ULN2003 Driver Test Module </li>
+                    <li>Adjustable Tripod</li>
+                    <li>9V Battery</li>
+                </ul>
+            </div>
+            <div class="about-motion-1">
+                <img src="images/room2.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Skills Used</h1>
+                <ul class="materials">
+                    <li>Arduino IDE</li>
+                    <li>Circuit Design</li>
+                    <li>Sensors</li>
+                    <li>Engineering Design</li>
+                    <li>3D Printing</li>
+                    <li>Laser Cutting</li>
+                    <li>Soldering</li>
+                </ul>
+            </div>
+            <div class="about-motion-1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HA0_gBuAFfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
+    
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+  </script>
+</body>
+</html>

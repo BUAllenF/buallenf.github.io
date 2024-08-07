@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="headerproj">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">HOME</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<div id="materials">
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-1">
+                <img src="images/truss.jpg" alt="">
+            </div>
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">EK301 Truss Design Project</h1>
+                <p>As part of the EK301 Statics course, we were tasked with building a MATLAB algorithm that can input any truss design and output which members will fail first and the maximum load before failure. We then built one of the designs and compared it with our algorithm predictions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row1">
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Materials</h1>
+                <ul class="materials">
+                    <li>MATLAB</li>
+                    <li>Acrylic Plastic Truss Members</li>
+                    
+                </ul>
+            </div>
+            <div class="about-motion-1">
+                <img src="images/Truss1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Skills Used</h1>
+                <ul class="materials">
+                    <li>MATLAB</li>
+                    <li>Physics</li>
+                    <li>Collaboration</li>
+                    
+                </ul>
+            </div>
+            <div class="about-motion-1">
+                <img src="images/truss2.png" alt="">
+            </div>
+            
+            
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
+    
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+  </script>
+</body>
+</html>
