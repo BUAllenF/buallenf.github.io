@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="headerproj">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">HOME</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<div id="materials">
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-1">
+                <img src="images/cart.png" alt="">
+            </div>
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Motor Speed Control</h1>
+                <p>ME360 Motor Speed Control Project. All design decisions, calculations, graphs, and files can be found in the google drive link at the bottom of this page. This page shows pictures and a video of the final product!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row1">
+
+            <div class="about-motion-1">
+                <img src="images/cartphys.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Skills Used</h1>
+                <ul class="materials">
+                    <li>CAD</li>
+                    <li>SOLIDWORKS Motion Analysis</li>
+                    <li>Laser Cutting, 3D Printing, Prototyping</li>
+                    <li>Arduino</li>
+
+                </ul>
+            </div>
+            <div class="about-motion-1">
+                <video src="videos/Final.mp4" controls></video>
+            </div>
+            <div class="about-motion-2">
+                <h1 class="sub-title-1">Files</h1>
+                <p><a href="https://drive.google.com/drive/folders/1lalFoqO1zZRiyqc2aefS-kIRcPEjWYsZ?usp=sharing" target="_blank">Motor Speed Control</a></p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-250px";
+    }
+
+  </script>
+</body>
+</html>
