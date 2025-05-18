@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,182 +10,316 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="resume.pdf" download>RESUME</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Boston University</p>
-            <p>Mechanical Engineering Student</p>
-            <h1>Welcome To My<br><span>Portfolio</span></h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="resume.pdf" download>RESUME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Boston University</p>
+                <p>Mechanical Engineering Student</p>
+                <h1>Welcome To My<br><span>Portfolio</span></h1>
+            </div>
         </div>
     </div>
-  </div>  
 
-  <!-- About Section -->
-  <div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/photo1.JPG" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Welcome to my website! I'm Allen Fraiman, a Mechanical Engineering student at Boston University with a passion for robotics and automation. I use this website to share some of my experiences and projects that I am working on. Thanks for visiting!</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo1.JPG" alt="">
                 </div>
-                
-                <div class="tab-contents active-tab" id="experience">
-                    <ul>
-                        <li>
-                            <img src="images/regeneron.png" class="experience-icon" alt="Regeneron Pharmaceuticals Icon">
-                            <span>Regeneron Pharmaceuticals Internship</span><br>
-                            Single-use Manufacturing Department <br>05/24 - 08/24
-                        </li>
-                        <li>
-                            <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
-                            <span>Boston University Undergraduate Research</span><br>
-                            Albro Laboratory <br>01/24 - 05/24
-                        </li>
-                        <li>
-                            <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
-                            <span>Boston University Undergraduate Research</span><br>
-                            Ziegler Raman Spectroscopy Labratory <br>01/23 - 05/23
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li>
-                            <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
-                            <span>Boston University</span><br>B.Sc Mechanical Engineering, Concentration in Robotics <br>Class of 2026
-                        </li>
-                        <li>
-                            <img src="images/tech.png" class="experience-icon" alt="SI Tech Icon">
-                            <span>Staten Island Technical Highschool</span><br>Class of 2022 
-                        </li>
-                        
-                    </ul>
-                </div>
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>CAD Software</span><br>SolidWorks <br>OnShape <br>Autodesk Inventor</li>
-                        <li><span>Electronics</span><br>Circuit Design <br>Microcontrollers/Sensors <br>3D Printing</li>
-                        <li><span>Programming</span><br>MATLAB <br>C/C++ <br>Python</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my website! I'm Allen Fraiman, a Mechanical Engineering student at Boston University
+                        with a passion for robotics and automation. I use this website to share some of my experiences
+                        and projects that I am working on. Thanks for visiting!</p>
+                    <!-- Tab titles: add Publications between Education and Skills -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('publications')">Publications</p> <!-- NEW -->
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
 
-  <!-- Portfolio -->
-  <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/lego.jpg">
-                <div class="layer">
-                    <h3>Lego Smart Clock</h3>
-                    <p>A clock, alarm, and temperature monitor made out of legos</p>
-                    <a href="lego.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/door1.jpg">    
-                <div class="layer">
-                    <h3>Keycard Door Access</h3>
-                    <p>Keep your room secure with keycard entry</p>
-                    <a href="door.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/roomicon.png">
-                <div class="layer">
-                    <h3>Room Occupancy Monitor</h3>
-                    <p>Control the occupancy of any room</p>
-                    <a href="room.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #e6e9ef;"></i></a>
-                </div>
-            </div>
-            
-        </div>
-        <a href="viewmore.html" class="btn">VIEW MORE</a>
-    </div>
-  </div>
 
-  <!-- Contact-->
-  <div id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contactinfo">
-          <h1 class="sub-title">Contact Information</h1>
-          
-          <p><i class="fas fa-envelope"></i>&nbsp;allen.fraiman@gmail.com</p>
-          
-          <div class="social-icons">
-            
-            <!-- Add the following lines for email and phone icons -->
-            <a href="https://www.linkedin.com/in/allen-fraiman-503550264/" class="link-link">
-                <i class="fa fa-linkedin"></i>
-              </a>
-            <a href="mailto:allen.fraiman@gmail.com" class="email-link">
-                <i class="fas fa-envelope"></i>
-              </a>
-              
-              
-            
-          </div>
-          
+                    <!-- Updated Experience Section for index.html -->
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li class="experience-item">
+                                <div class="experience-header">
+                                    <img src="images/regeneron.png" class="experience-icon" alt="Regeneron">
+                                    <div class="experience-text">
+                                        <span>Regeneron Pharmaceuticals Internship</span><br>
+                                        Quality Control Automation <br>05/25 - 08/25
+                                    </div>
+                                    <img src="images/seemore.png" class="toggle-arrow" alt="Toggle Arrow">
+                                </div>
+                                <ul class="experience-details">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </li>
+                            <li class="experience-item">
+                                <div class="experience-header">
+                                    <img src="images/forecast.png" class="experience-icon" alt="Regeneron">
+                                    <div class="experience-text">
+                                        <span>ForecAST Diagnostics Research Assistant</span><br>
+                                        Rapid Antibiotic Susceptibility Testing Startup Company <br>09/24 - Present
+                                    </div>
+                                    <img src="images/seemore.png" class="toggle-arrow" alt="Toggle Arrow">
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Develop a commercial methodology for rapid antibiotic susceptibility testing
+                                        (AST) via Surface-Enhanced
+                                        Raman Spectroscopy (SERS) for the purpose of treating time sensitive
+                                        life-threatening infections.</li>
+                                    <li>Manage laboratory inventory, ensuring all necessary equipment and materials are
+                                        acquired.</li>
+                                </ul>
+                            </li>
+                            <li class="experience-item">
+                                <div class="experience-header">
+                                    <img src="images/regeneron.png" class="experience-icon" alt="Regeneron">
+                                    <div class="experience-text">
+                                        <span>Regeneron Pharmaceuticals Internship</span><br>
+                                        Single-use Manufacturing Department <br>05/24 - 08/24
+                                    </div>
+                                    <img src="images/seemore.png" class="toggle-arrow" alt="Toggle Arrow">
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Implemented process analytical technology (PAT) to automate downstream protein
+                                        purification processes,
+                                        ensuring compliance with federal regulations and Good Manufacturing Practice
+                                        (GMP) standards.</li>
+                                    <li>Developed a prototype for a single use manufacturing process, resulting in
+                                        annual savings of
+                                        approximately $8 million.</li>
+                                    <li>Presented the project at a company-wide poster exposition and a departmental
+                                        conference</li>
+                                </ul>
+                            </li>
+
+                            <li class="experience-item">
+                                <div class="experience-header">
+                                    <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
+                                    <div class="experience-text">
+                                        <span>Boston University Undergraduate Research</span><br>
+                                        Albro Laboratory <br>01/24 - 05/24
+                                    </div>
+                                    <img src="images/seemore.png" class="toggle-arrow" alt="Toggle Arrow">
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Explored the application of Raman spectroscopy in detecting early indicators of
+                                        osteoarthritis through cartilage
+                                        health analysis.</li>
+                                    <li>Enhanced the MATLAB Raman processing code by integrating multivariate analysis
+                                        techniques to
+                                        include subchondral bone components.
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="experience-item">
+                                <div class="experience-header">
+                                    <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
+                                    <div class="experience-text">
+                                        <span>Boston University Undergraduate Research</span><br>
+                                        Ziegler Raman Spectroscopy Laboratory <br>01/23 - 05/23
+                                    </div>
+                                    <img src="images/seemore.png" class="toggle-arrow" alt="Toggle Arrow">
+                                </div>
+                                <ul class="experience-details">
+                                    <li>Conducted experiments to determine the feasibility of Surface-Enhanced Raman
+                                        Spectroscopy (SERS) for rapid
+                                        antibiotic susceptibility on a team of 3 members.</li>
+                                    <li>Handled bacteria and antibiotics leveraging various laboratory equipment
+                                        including a centrifuge, infrared
+                                        spectrometer, Raman spectrometer, automated pipette.</li>
+                                    <li>Wrote MATLAB script templates enabling seamless transformation ofspectrometer
+                                        data into professional graphs
+                                        for presentations and publication purposes.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+                            <li>
+                                <img src="images/bu.jpg" class="experience-icon" alt="Boston University">
+                                <span>Boston University</span><br>B.Sc Mechanical Engineering, Concentration in Robotics
+                                <br>Class of 2026 <br> 3.99 GPA
+                            </li>
+                            <li>
+                                <img src="images/tech.png" class="experience-icon" alt="SI Tech Icon">
+                                <span>Staten Island Technical Highschool</span><br>Class of 2022
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Publications Section -->
+                    <div class="tab-contents" id="publications">
+                        <ul>
+                            <li>
+                                <span>Ultra-rapid, quantitative, label-free antibiotic susceptibility testing via optically detected purine metabolites</span><br>
+                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0039914025003972?via%3Dihub" target="_blank" rel="noopener">
+                                    Fraiman, A., & Ziegler, L. D. (2025). Ultra-rapid, quantitative, label-free antibiotic susceptibility testing via optically detected
+                                    purine metabolites. Talanta, 292, 127907. https://doi.org/10.1016/j.talanta.2025.127907
+                                </a>
+                            </li>
+
+                            <!-- repeat <li> as needed -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>CAD Software</span><br>SolidWorks <br>OnShape <br>Autodesk Inventor</li>
+                            <li><span>Electronics</span><br>Circuit Design <br>Microcontrollers/Sensors <br>3D Printing
+                            </li>
+                            <li><span>Programming</span><br>MATLAB <br>C/C++ <br>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  
-  
-  <script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/lego.jpg">
+                    <div class="layer">
+                        <h3>Lego Smart Clock</h3>
+                        <p>A clock, alarm, and temperature monitor made out of legos</p>
+                        <a href="lego.html"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #e6e9ef;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/door1.jpg">
+                    <div class="layer">
+                        <h3>Keycard Door Access</h3>
+                        <p>Keep your room secure with keycard entry</p>
+                        <a href="door.html"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #e6e9ef;"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/roomicon.png">
+                    <div class="layer">
+                        <h3>Room Occupancy Monitor</h3>
+                        <p>Control the occupancy of any room</p>
+                        <a href="room.html"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #e6e9ef;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="viewmore.html" class="btn">VIEW MORE</a>
+        </div>
+    </div>
+
+    <!-- Contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactinfo">
+                    <h1 class="sub-title">Contact Information</h1>
+
+                    <p><i class="fas fa-envelope"></i>&nbsp;allen.fraiman@gmail.com</p>
+
+                    <div class="social-icons">
+
+                        <!-- Add the following lines for email and phone icons -->
+                        <a href="https://www.linkedin.com/in/allen-fraiman-503550264/" class="link-link">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:allen.fraiman@gmail.com" class="email-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
 
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
 
-  </script>
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
 
-  <script>
+    </script>
+    <script>
+        document.querySelectorAll('.experience-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
 
-    var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu(){
-        sidemenu.style.right = "-250px";
-    }
-
-  </script>
+    <script>
+        const arrows = document.querySelectorAll('.toggle-arrow');
+        arrows.forEach(arrow => {
+            arrow.addEventListener('mouseenter', () => {
+                const details = arrow.closest('.experience-item').querySelector('.experience-details');
+                details.style.display = 'block';
+            });
+            arrow.addEventListener('mouseleave', () => {
+                const details = arrow.closest('.experience-item').querySelector('.experience-details');
+                details.style.display = 'none';
+            });
+        });
+    </script>
 </body>
+
 </html>

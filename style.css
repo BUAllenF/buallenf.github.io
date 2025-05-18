@@ -10,12 +10,6 @@
     box-sizing: border-box;
 }
 
-.experience-icon {
-    width: 30px; /* Adjust the size as needed */
-    height: auto;
-    margin-right: 10px; /* Space between the icon and the text */
-    vertical-align: middle; /* Align the icon with the text */
-}
 html{
     scroll-behavior: smooth;
 }
@@ -23,7 +17,7 @@ html{
 body {
     background: linear-gradient(to bottom, #151515, #000000);
     color: #fff;
-    
+
 }
 
 #header {
@@ -41,14 +35,14 @@ body {
 #headerproj{
     width: 100%;
     height: 10vh;
-    
-    
+
+
 }
 
 .container {
     padding: 10px 10%;
-    
-  
+
+
 }
 
 .container1 {
@@ -115,7 +109,7 @@ nav ul li a:hover::after {
 
 .materials{
     font-size: 20px;
-    
+
 }
 
 
@@ -135,7 +129,7 @@ nav ul li a:hover::after {
 #about{
     padding: 80px 0;
     color: #ffffff;
-    
+
 }
 
 .row{
@@ -154,18 +148,18 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
-.about-motion-1{    
+.about-motion-1{
     flex-basis: 45%;
-   
+
 }
 
-.about-motion-3{    
+.about-motion-3{
     flex-basis: 45%;
-   
+
 }
-.about-bread-1{    
+.about-bread-1{
     flex-basis: 45%;
-   
+
 }
 .about-motion-2{
     flex-basis: 50%;
@@ -212,7 +206,7 @@ nav ul li a:hover::after {
     border: 2px solid #FFAD3A;
     border-radius: 10px;
     transition: transform 0.5s;
-    
+
 }
 .about-motion-3 video{
     width: 100%;
@@ -220,7 +214,7 @@ nav ul li a:hover::after {
     border: 2px solid #FFAD3A;
     border-radius: 10px;
     transition: transform 0.5s;
-    
+
 }
 .about-col-2{
     flex-basis: 60%;
@@ -298,14 +292,14 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab{
     display: block;
-    
+
 }
 
 /* Portfolio */
 
 #portfolio{
     padding: 50px 0;
-    
+
 }
 
 .work-list{
@@ -400,32 +394,32 @@ nav ul li a:hover::after {
 #contact {
     display: flex;
     justify-content: center;
-    
+
     height: 80vh; /* Adjust the height as needed */
     font-size: 24px; /* Adjust the font size as needed */
   }
   .contactinfo {
     text-align: center;
   }
-  
+
   .contactinfo p {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .social-icons {
     display: flex;
     justify-content: center;
     margin-top: 20px; /* Adjust the spacing as needed */
   }
-  
+
   .social-icons a {
     display: inline-block;
     margin-right: 10px; /* Adjust the spacing between icons */
     color: inherit;
     text-decoration: none;
-  }    
+  }
   .email-link {
     color: inherit; /* Use the parent element's text color */
     text-decoration: none; /* Remove underline */
@@ -438,7 +432,7 @@ nav ul li a:hover::after {
     color: inherit; /* Use the parent element's text color */
     text-decoration: none; /* Remove underline */
   }
-  
+
   .link-link:hover {
     color: #FFAD3A; /* Change the color on hover if desired */
   }
@@ -456,6 +450,72 @@ nav .fas{
 
 }
 
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.experience-icon {
+  width: 30px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.experience-text {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.experience-text span {
+  color: #FFAD3A;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.arrow-hover-zone {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 2px;
+}
+
+.toggle-arrow {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.experience-details {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  list-style-type: disc;
+  color: #ccc;
+  font-size: 14px;
+  padding-left: 45px;
+  transition: all 0.4s ease;
+  transform: translateY(-10px);
+  pointer-events: none;
+  margin-top: 8px;
+}
+
+.experience-item:hover .experience-details {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
   @media only screen and (max-width: 900px){
     #header{
         background-image: none;
@@ -469,7 +529,7 @@ nav .fas{
     }
     .header-text h1{
         font-size: 30px;
-        
+
     }
     nav .fas{
         display: block;
@@ -479,7 +539,7 @@ nav .fas{
     background: #FFAD3A;
     position: fixed;
     top: 0;
-    right: -250px; 
+    right: -250px;
     width: 250px;
     height: 100vh;
     padding-top: 50px;
@@ -527,9 +587,96 @@ nav ul .fas{
 }
 
 .tab-links{
-    
+
     font-size: 16px;
     margin-right: 20px;
 }
 
   }
+
+.experience-item {
+  margin-bottom: 30px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.experience-icon {
+  width: 30px;
+  height: auto;
+}
+
+.experience-text {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.experience-text span {
+  color: #FFAD3A;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.toggle-arrow {
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-arrow:hover {
+  transform: rotate(90deg);
+}
+
+.experience-details {
+  display: none;
+  list-style-type: disc;
+  color: #ccc;
+  font-size: 14px;
+  padding-left: 45px;
+  margin-top: 8px;
+  animation: fadeIn 1.5s ease forwards;
+}
+/* Style for Publications list */
+#publications .publications-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+#publications .publications-list li {
+  margin-bottom: 0.5rem;
+}
+
+#publications .publications-list a {
+  text-decoration: none;
+  color: var(--primary-text-color); /* or whatever fits your theme */
+}
+
+#publications .publications-list a:hover {
+  text-decoration: underline;
+}
+#publications a {
+  color: #fff;              /* white text */
+  font-size: 16px;          /* match your li font-size */
+  text-decoration: none;
+}
+
+#publications a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
