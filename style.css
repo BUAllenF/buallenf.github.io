@@ -496,25 +496,20 @@ nav .fas{
 }
 
 .experience-details {
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
+  display: none;
   list-style-type: disc;
   color: #ccc;
   font-size: 14px;
   padding-left: 45px;
-  transition: all 0.4s ease;
-  transform: translateY(-10px);
-  pointer-events: none;
   margin-top: 8px;
+  animation: fadeIn 1.5s ease forwards;
+}
+.experience-item.open .experience-details {
+  display: block;
 }
 
-.experience-item:hover .experience-details {
-  opacity: 1;
-  max-height: 500px;
-  transform: translateY(0);
-  pointer-events: auto;
-}
+
+
 
   @media only screen and (max-width: 900px){
     #header{
@@ -629,9 +624,10 @@ nav ul .fas{
   transition: transform 0.3s ease;
 }
 
-.toggle-arrow:hover {
+.experience-item.open .toggle-arrow {
   transform: rotate(90deg);
 }
+
 
 .experience-details {
   display: none;
@@ -642,6 +638,10 @@ nav ul .fas{
   margin-top: 8px;
   animation: fadeIn 1.5s ease forwards;
 }
+.experience-item.open .experience-details {
+  display: block;
+}
+
 /* Style for Publications list */
 #publications .publications-list {
   list-style-type: disc;
@@ -679,4 +679,7 @@ nav ul .fas{
     opacity: 1;
     transform: translateY(0);
   }
+}
+.experience-item.open .toggle-arrow {
+  transform: rotate(90deg);
 }

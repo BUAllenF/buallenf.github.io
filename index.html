@@ -308,18 +308,41 @@
 
 
     <script>
-        const arrows = document.querySelectorAll('.toggle-arrow');
-        arrows.forEach(arrow => {
-            arrow.addEventListener('mouseenter', () => {
+        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+            arrow.addEventListener('click', () => {
                 const details = arrow.closest('.experience-item').querySelector('.experience-details');
-                details.style.display = 'block';
+                const isVisible = details.style.display === 'block';
+                details.style.display = isVisible ? 'none' : 'block';
             });
-            arrow.addEventListener('mouseleave', () => {
-                const details = arrow.closest('.experience-item').querySelector('.experience-details');
-                details.style.display = 'none';
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                const item = arrow.closest('.experience-item');
+                const details = item.querySelector('.experience-details');
+                item.classList.toggle('open');
+                if (item.classList.contains('open')) {
+                    details.style.display = 'block';
+                } else {
+                    details.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                const item = arrow.closest('.experience-item');
+                item.classList.toggle('open');
             });
         });
     </script>
 </body>
+
+
+
 
 </html>
