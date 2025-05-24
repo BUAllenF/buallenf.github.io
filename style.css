@@ -815,131 +815,9 @@ nav ul .fas{
 }
 
 
-.project-card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(255, 173, 58, 0.2);
-  transition: transform 0.3s ease;
-}
-
 .project-card:hover {
   transform: translateY(-4px);
 }
-
-.project-card img {
-  width: 100%;
-  display: block;
-}
-
-.project-info {
-  padding: 16px 20px;
-  position: relative;
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.project-header h3 {
-  color: #fff;
-  font-size: 18px;
-  margin: 0;
-}
-
-.project-btn {
-  background: #ffad3a;
-  color: #000;
-  border-radius: 50%;
-  padding: 8px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-}
-
-.project-btn:hover {
-  transform: scale(1.1);
-}
-
-.project-skills {
-  list-style: disc;
-  padding-left: 20px;
-  margin-top: 10px;
-  color: #ffad3a;
-  font-size: 14px;
-}
-
-
-.project-card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-}
-
-.project-desc {
-  margin-top: 12px;
-  color: #ccc;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-
-.work-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  align-items: stretch;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.project-info {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.project-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  height: 100%;
-}
-
-.project-desc {
-  margin-top: auto;
-  padding-top: 10px;
-}
-
 
 .project-card img {
   width: 100%;
@@ -950,33 +828,29 @@ nav ul .fas{
   border-top-right-radius: 12px;
 }
 
-
-.project-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
+.project-btn:hover {
+  transform: scale(1.1);
 }
 
-.project-desc {
-  margin-top: 8px;
-  color: #ccc;
-  font-size: 14px;
-  line-height: 1.5;
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  align-items: stretch;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 
-.project-card {
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 16px rgba(255, 173, 58, 0.2);
-  transition: transform 0.3s ease;
-  display: flex;
-  gap: 30px;
-  padding: 20px;
-  align-items: flex-start;
-}
 
 .project-card:hover {
   transform: translateY(-4px);
@@ -1245,4 +1119,82 @@ body, html {
 
 .container:last-child {
   margin-bottom: 0 !important;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(255, 173, 58, 0.2);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+  height: 100%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.project-header h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.project-btn {
+  background: #ffad3a;
+  color: #000;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: scale(1.1);
+}
+
+.project-desc {
+  margin-top: auto;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.project-card img.center-crop {
+  object-position: center center;
+}
+
+.project-card img.top-crop {
+  object-position: top center;
 }
