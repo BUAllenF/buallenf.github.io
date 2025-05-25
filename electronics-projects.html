@@ -1,15 +1,119 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Electronics Projects</title>
-  <link rel="stylesheet" href="style_skilllinks_final.css">
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Allen Fraiman</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="/images/icon.png" rel="icon" type="image/x-icon" />
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c5f8c9829d.js"></script>
 </head>
+
 <body>
-  <div class="container">
-    <h1 class="sub-title">Electronics Projects</h1>
-    <p>Here you can explore projects that highlight skills in Electronics.</p>
-    <a href="index_skilllinks_final.html" class="btn">← Back to Skills</a>
-  </div>
+    <div id="headerproj">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png" />
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <br />
+            <h1 class="sub-title">Electronics Projects</h1>
+            <div class="work-list">
+
+                <div class="project-card"><img src="images/rosbot2.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>ROSBot</h3><a class="project-btn" href="rosbot.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">PID controlled robot that can make decisions based on its environment.</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/roomicon2.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Room Occupancy Monitor</h3><a class="project-btn" href="room.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">Control the occupancy of any room!</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/door1.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Keycard Door Access</h3><a class="project-btn" href="door.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">Keep your room secure with a keycard entry</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/lego.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Lego Smart Clock</h3><a class="project-btn" href="lego.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">A clock, alarm, and temperature monitor made out of legos</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/temp1.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Temperature Alarm System</h3><a class="project-btn" href="temp.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">Be alerted of any changes in your environment</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/motion.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Motion Sensing Nightlight</h3><a class="project-btn" href="motion.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">Illuminate your nightstand with your hand</p>
+                    </div>
+                </div>
+                <div class="project-card"><img src="images/candy7.jpg" />
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3>Math Candy Game</h3><a class="project-btn" href="candy.html"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                        <p class="project-desc">Answer a math question for a candy</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+
+    </script>
 </body>
+
 </html>
