@@ -1,90 +1,160 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allen Fraiman</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    <script src="https://kit.fontawesome.com/c5f8c9829d.js" crossorigin="anonymous"></script>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Allen Fraiman</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="/images/icon.png" rel="icon" type="image/x-icon"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/c5f8c9829d.js"></script>
+<style>
+.fullscreen-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.fullscreen-media {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.fullscreen-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: transparent;
+  color: white;
+  font-size: 36px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
 </head>
 <body>
-  <div id="headerproj">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="index.html">HOME</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-    </div>
+<div id="headerproj">
+<div class="container">
+<nav>
+<img class="logo" onclick="openFullscreen(this)" src="images/logo.png"/>
+<ul id="sidemenu">
+<li><a href="index.html">HOME</a></li>
+<i class="fas fa-times" onclick="closemenu()"></i>
+</ul>
+<i class="fas fa-bars" onclick="openmenu()"></i>
+</nav>
 </div>
-
-
-<div id="materials">
-    <div class="container">
-        <div class="row">
-            <div class="about-motion-1">
-                <img src="images/me416.JPG" alt="">
-            </div>
-            <div class="about-motion-2">
-                <h1 class="sub-title-1">Automatic Pizza Cutter </h1>
-                <p>ME360 Final Project. This system has 2.5 degrees of freedom employing stepper motors and an extruder to cut a pizza into 8 equal slices!</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row1">
-
-            <div class="about-motion-1">
-                <img src="images/pizzacad.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="about-motion-2">
-                <h1 class="sub-title-1">Skills Used</h1>
-                <ul class="materials">
-                    <li>CAD</li>
-                    <li>Stepper Motor Control via G-code</li>
-                    <li>3D Printing, Prototyping</li>
-                    <li>Arduino</li>
-
-                </ul>
-            </div>
-            <div class="about-motion-1">
-                <video src="videos/PizzaDemo.mp4" controls></video>
-            </div>
-
-        </div>
-    </div>
-
+</div>
+<div class="project-detail-page" id="materials">
+<div class="container">
+<div class="row" style="align-items: flex-start; gap: 40px;">
+<div style="flex: 1;">
+<h1 class="sub-title-1">Automatic Pizza Cutter</h1>
+<p>ME360 Final Project. This system has 2.5 degrees of freedom employing stepper motors and an extruder to cut a pizza into 8 equal slices!</p>
+<br/><br/>
+<h3 style="color: #fff; font-size: 18px; margin-bottom: 8px;">Skills Used</h3>
+<div class="skill-tag-container"><span class="skill-tag">CAD</span><span class="skill-tag">Stepper Motor Control via G-code</span><span class="skill-tag">3D Printing, Prototyping</span><span class="skill-tag">Arduino</span></div>
+</div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+<div class="slideshow-container" id="media-slideshow"><div class="slide"><img alt="Candy Game Image" onclick="openFullscreen(this)" src="images/rosbot2.jpg"/></div><div class="slide"><video controls="True" src="videos/pidcontrol.mov"></video></div><div class="slide"><video controls="True" src="videos/Obstacle.MOV"></video></div><div class="slide-controls"><button onclick="changeSlide(-1)">❮</button><button onclick="openFullscreenFromSlideshow()">⛶</button><button onclick="changeSlide(1)">❯</button></div></div>
 </div>
 </div>
 </div>
-
-
-
-
-
-
+</div>
 <script>
+        var sidemenu = document.getElementById("sidemenu");
 
-    var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
 
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
+        function closemenu() {
+            sidemenu.style.right = "-250px";
+        }
+    </script>
+<script>
+        let slideIndex = 0;
+        let slides = document.querySelectorAll(".slide");
+        let slideInterval;
 
-    function closemenu(){
-        sidemenu.style.right = "-250px";
-    }
+        function showSlide(n) {
+            slideIndex = (n + slides.length) % slides.length;
+            slides.forEach((slide, idx) => {
+                slide.style.display = idx === slideIndex ? "block" : "none";
+            });
+        }
 
-  </script>
+        function changeSlide(n) {
+            showSlide(slideIndex + n);
+            resetInterval();
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startSlideShow();
+        }
+
+        function startSlideShow() {
+            slideInterval = setInterval(() => {
+                const currentSlide = slides[slideIndex];
+                const video = currentSlide.querySelector("video");
+                if (!video || video.paused || video.ended) {
+                    changeSlide(1);
+                }
+            }, 15000);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            showSlide(slideIndex);
+            startSlideShow();
+        });
+    </script>
+<script>
+function openFullscreen(img) {
+  const overlay = document.createElement("div");
+  overlay.classList.add("fullscreen-overlay");
+
+  const clone = img.cloneNode();
+  clone.classList.add("fullscreen-img");
+
+  overlay.appendChild(clone);
+  document.body.appendChild(overlay);
+
+  overlay.onclick = () => document.body.removeChild(overlay);
+}
+</script>
+<script>
+function openFullscreenFromSlideshow() {
+  const currentSlide = document.querySelectorAll(".slide")[slideIndex];
+  const media = currentSlide.querySelector("img, video");
+  if (!media) return;
+
+  const overlay = document.createElement("div");
+  overlay.classList.add("fullscreen-overlay");
+
+  const closeBtn = document.createElement("button");
+  closeBtn.classList.add("fullscreen-close");
+  closeBtn.innerHTML = "&times;";
+  closeBtn.onclick = () => document.body.removeChild(overlay);
+
+  const clone = media.cloneNode(true);
+  clone.classList.add("fullscreen-media");
+
+  overlay.appendChild(closeBtn);
+  overlay.appendChild(clone);
+  document.body.appendChild(overlay);
+}
+</script>
 </body>
 </html>
