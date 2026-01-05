@@ -1,374 +1,310 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Allen Fraiman</title>
-<link href="/images/icon.png" rel="icon" type="image/x-icon"/>
-<link href="style.css" rel="stylesheet"/>
-<script crossorigin="anonymous" src="https://kit.fontawesome.com/c5f8c9829d.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Fraiman | Engineering Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div id="header">
-<div class="container">
-<nav>
-<img class="logo" src="images/logo.png"/>
-<ul id="sidemenu">
-<li><a href="#header">HOME</a></li>
-<li><a href="#about">ABOUT</a></li>
-<li><a href="#portfolio">PORTFOLIO</a></li>
-<li><a href="#contact">CONTACT</a></li>
-<li><a download="" href="resume.pdf">RESUME</a></li>
-<i class="fas fa-times" onclick="closemenu()"></i>
-</ul>
-<i class="fas fa-bars" onclick="openmenu()"></i>
-</nav>
-<div class="header-text">
-<p>Boston University</p>
-<p>Mechanical Engineering Student</p>
-<h1>Welcome To My<br/><span>Portfolio</span></h1>
-</div>
-</div>
-</div>
-<!-- About Section -->
-<div id="about">
-<div class="container">
-<div class="row">
-<div class="about-col-1">
-<img alt="" src="images/photo1.JPG"/>
-</div>
-<div class="about-col-2">
-<h1 class="sub-title">About Me</h1>
-<p>Welcome to my website! I'm Allen Fraiman, a Mechanical Engineering student at Boston University
-                        with a passion for robotics and automation. I use this website to share some of my experiences
-                        and projects that I am working on. Thanks for visiting!</p>
-<!-- Tab titles: add Publications between Education and Skills -->
-<div class="tab-titles">
-<p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-<p class="tab-links" onclick="opentab('education')">Education</p>
-<p class="tab-links" onclick="opentab('publications')">Publications</p> <!-- NEW -->
-<p class="tab-links" onclick="opentab('skills')">Skills</p>
-</div>
-<!-- Updated Experience Section for index.html -->
-<div class="tab-contents active-tab" id="experience">
-<ul>
-<li class="experience-item">
-<div class="experience-header">
-<img alt="Regeneron" class="experience-icon" src="images/regeneron.png"/>
-<div class="experience-text">
-<span>Regeneron Pharmaceuticals Internship</span><br/>
-                                        Quality Control Automation <br/>05/25 - 08/25
-                                    </div>
-<img alt="Toggle Arrow" class="toggle-arrow" src="images/seemore.png"/>
-</div>
-<ul class="experience-details">
-<li>Automate commercial assay testing through robotic integration using Cellario software.</li>
-<li>Implement robotic liquid handling and washing systems to minimize human error in assay testing.</li>
-</ul>
-</li>
-<li class="experience-item">
-<div class="experience-header">
-<img alt="Regeneron" class="experience-icon" src="images/forecast.png"/>
-<div class="experience-text">
-<span>ForecAST Diagnostics Research Assistant</span><br/>
-                                        Rapid Antibiotic Susceptibility Testing Startup Company <br/>09/24 - Present
-                                    </div>
-<img alt="Toggle Arrow" class="toggle-arrow" src="images/seemore.png"/>
-</div>
-<ul class="experience-details">
-<li>Develop a commercial methodology for rapid antibiotic susceptibility testing
-                                        (AST) via Surface-Enhanced
-                                        Raman Spectroscopy (SERS) for the purpose of treating time sensitive
-                                        life-threatening infections.</li>
-<li>Manage laboratory inventory, ensuring all necessary equipment and materials are
-                                        acquired.</li>
-</ul>
-</li>
-<li class="experience-item">
-<div class="experience-header">
-<img alt="Regeneron" class="experience-icon" src="images/regeneron.png"/>
-<div class="experience-text">
-<span>Regeneron Pharmaceuticals Internship</span><br/>
-                                        Single-use Manufacturing Department <br/>05/24 - 08/24
-                                    </div>
-<img alt="Toggle Arrow" class="toggle-arrow" src="images/seemore.png"/>
-</div>
-<ul class="experience-details">
-<li>Implemented process analytical technology (PAT) to automate downstream protein
-                                        purification processes,
-                                        ensuring compliance with federal regulations and Good Manufacturing Practice
-                                        (GMP) standards.</li>
-<li>Developed a prototype for a single use manufacturing process, resulting in
-                                        annual savings of
-                                        approximately $8 million.</li>
-<li>Presented the project at a company-wide poster exposition and a departmental
-                                        conference</li>
-</ul>
-</li>
-<li class="experience-item">
-<div class="experience-header">
-<img alt="Boston University" class="experience-icon" src="images/bu.jpg"/>
-<div class="experience-text">
-<span>Boston University Undergraduate Research</span><br/>
-                                        Albro Laboratory <br/>01/24 - 05/24
-                                    </div>
-<img alt="Toggle Arrow" class="toggle-arrow" src="images/seemore.png"/>
-</div>
-<ul class="experience-details">
-<li>Explored the application of Raman spectroscopy in detecting early indicators of
-                                        osteoarthritis through cartilage
-                                        health analysis.</li>
-<li>Enhanced the MATLAB Raman processing code by integrating multivariate analysis
-                                        techniques to
-                                        include subchondral bone components.
-                                    </li>
-</ul>
-</li>
-<li class="experience-item">
-<div class="experience-header">
-<img alt="Boston University" class="experience-icon" src="images/bu.jpg"/>
-<div class="experience-text">
-<span>Boston University Undergraduate Research</span><br/>
-                                        Ziegler Raman Spectroscopy Laboratory <br/>01/23 - 05/23
-                                    </div>
-<img alt="Toggle Arrow" class="toggle-arrow" src="images/seemore.png"/>
-</div>
-<ul class="experience-details">
-<li>Conducted experiments to determine the feasibility of Surface-Enhanced Raman
-                                        Spectroscopy (SERS) for rapid
-                                        antibiotic susceptibility on a team of 3 members.</li>
-<li>Handled bacteria and antibiotics leveraging various laboratory equipment
-                                        including a centrifuge, infrared
-                                        spectrometer, Raman spectrometer, automated pipette.</li>
-<li>Wrote MATLAB script templates enabling seamless transformation ofspectrometer
-                                        data into professional graphs
-                                        for presentations and publication purposes.</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="tab-contents" id="education">
-<ul>
-<li>
-<img alt="Boston University" class="experience-icon" src="images/bu.jpg"/>
-<span>Boston University</span><br/>B.Sc Mechanical Engineering, Concentration in
-                                Robotics
-                                <br/>Class of 2026 <br/> 3.99 GPA
-                            </li>
-<li>
-<img alt="SI Tech Icon" class="experience-icon" src="images/tech.png"/>
-<span>Staten Island Technical Highschool</span><br/>Class of 2022
-                            </li>
-</ul>
-</div>
-<!-- Publications Section -->
-<div class="tab-contents" id="publications">
-<ul>
-<li>
-<span>Ultra-rapid, quantitative, label-free antibiotic susceptibility testing via
-                                    optically detected purine metabolites</span><br/>
-<a class="btn" href="https://www.sciencedirect.com/science/article/abs/pii/S0039914025003972?via%3Dihub" rel="noopener" target="_blank">OPEN ARTICLE</a>
-</li>
-<!-- repeat <li> as needed -->
-</ul>
-</div>
-<div class="tab-contents" id="skills">
-<div class="skills-grid">
-<div class="skill-group">
-<div class="skill-heading">
-<h3>🛠 CAD Software</h3><a class="skill-link" href="cad-projects.html">➤</a>
-</div>
-<div class="skill-tags">
-<span class="skill-tag" data-skill="SolidWorks">SolidWorks</span>
-<span class="skill-tag" data-skill="OnShape">OnShape</span>
-<span class="skill-tag" data-skill="Autodesk Inventor">Autodesk Inventor</span>
-<span class="skill-tag" data-skill="AutoCAD">AutoCAD</span>
-<span class="skill-tag" data-skill="Fusion360">Fusion360</span>
-<span class="skill-tag" data-skill="Rhino3D">Rhino3D</span>
-</div>
-</div>
-<div class="skill-group">
-<div class="skill-heading">
-<h3>💡 Electronics</h3><a class="skill-link" href="electronics-projects.html">➤</a>
-</div>
-<div class="skill-tags">
-<span class="skill-tag" data-skill="Circuit Design">Circuit Design</span>
-<span class="skill-tag" data-skill="Sensor Design">Sensor Design</span>
-<span class="skill-tag" data-skill="3D Printing">3D Printing</span>
-<span class="skill-tag" data-skill="KiCAD">KiCAD</span>
-</div>
-</div>
-<div class="skill-group">
-<div class="skill-heading">
-<h3>💻 Programming</h3><a class="skill-link" href="programming-projects.html">➤</a>
-</div>
-<div class="skill-tags">
-<span class="skill-tag" data-skill="MATLAB">MATLAB</span>
-<span class="skill-tag" data-skill="C/C++">C/C++</span>
-<span class="skill-tag" data-skill="Python">Python</span>
-<span class="skill-tag" data-skill="ROS2">ROS2</span>
-<span class="skill-tag" data-skill="Arduino IDE">Arduino IDE</span>
-<span class="skill-tag" data-skill="Arduino IDE">G-Code</span>
-</div>
-</div>
-<div class="skill-group">
-<div class="skill-heading">
-<h3>📊 Statistics / Data Analysis
-                                    </h3><a class="skill-link" href="data-projects.html">➤</a>
-</div>
-<div class="skill-tags">
-<span class="skill-tag" data-skill="MATLAB">MATLAB</span>
-<span class="skill-tag" data-skill="Excel">Excel</span>
-<span class="skill-tag" data-skill="Python">Python</span>
-<span class="skill-tag" data-skill="Pandas">LabVIEW</span>
-<span class="skill-tag" data-skill="Pandas">Raman Analysis</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Portfolio -->
-<div id="portfolio">
-<div class="container">
-<h1 class="sub-title">My Projects</h1>
-<div class="work-list">
-<div class="project-card"><img class="center-crop" src="images/pizza.JPG"/>
-<div class="project-info">
-<div class="project-header">
-<h3>Automatic Pizza Cutter</h3><a class="project-btn" href="pizza.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-</div>
-<p class="project-desc">Cut a pizza pie in 8 perfect slices without lifting a finger!</p>
-</div>
-</div>
-<div class="project-card"><img class="center-crop top-crop" src="images/rosbot2.jpg"/>
-<div class="project-info">
-<div class="project-header">
-<h3>ROSBot</h3><a class="project-btn" href="rosbot.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-</div>
-<p class="project-desc">PID controlled robot that can make decisions based on its environment.</p>
-</div>
-</div>
-<div class="project-card"><img class="top-crop" src="images/roomicon2.jpg"/>
-<div class="project-info">
-<div class="project-header">
-<h3>Room Occupancy Monitor</h3><a class="project-btn" href="room.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-</div>
-<p class="project-desc">Control the occupancy of any room!</p>
-</div>
-</div>
-</div>
-<a class="btn" href="viewmore.html">VIEW MORE</a>
-</div>
-</div>
-<!-- Contact-->
-<div id="contact">
-<div class="container">
-<div class="row">
-<div class="contactinfo">
-<h1 class="sub-title">Contact Information</h1>
-<p><i class="fas fa-envelope"></i> allen.fraiman@gmail.com</p>
-<div class="social-icons">
-<!-- Add the following lines for email and phone icons -->
-<a class="link-link" href="https://www.linkedin.com/in/allen-fraiman-503550264/">
-<i class="fa fa-linkedin"></i>
-</a>
-<a class="email-link" href="mailto:allen.fraiman@gmail.com">
-<i class="fas fa-envelope"></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+
+    <nav>
+        <div class="logo">ALLEN FRAIMAN <span class="subtitle">ENGINEERING PORTFOLIO</span></div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="#work">Case Studies</a>
+            <a href="#skills">Capabilities</a>
+            <a href="#about">About & Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="AllenFraiman_Resume.pdf" target="_blank" class="btn-nav">Resume</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Allen Fraiman</h1>
+            <p class="hero-sub">
+                Mechanical Engineering & Robotics at <strong>Boston University</strong>.<br>
+                Specializing in automation, manufacturing workflows, and mechatronics.
+            </p>
+            <div class="hero-buttons">
+                <a href="#work" class="btn-primary">View Projects</a>
+                <a href="#experience" class="btn-secondary">Experience</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="section-pad">
+        <div class="container">
+            <h2 class="section-title">Selected Case Studies</h2>
+
+            <div class="case-study-card">
+                <div class="case-visual">
+                    <img src="liquid_handler.png" alt="Robotic Liquid Handler" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>High-Throughput Bioassay Automation</h3>
+                    <p class="role">Regeneron (2025) | Role: Automation Engineering Intern</p>
+                    <p><strong>The Challenge:</strong> Manual workflow steps were causing variability and bottlenecking critical sample processing.</p>
+                    <p><strong>The Solution:</strong> Synchronized 12 robotic devices via Cellario to create a fully automated, consistent bioassay workflow, eliminating manual intervention and increasing throughput 4x.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="number">4x</span>
+                            <span class="desc">Throughput Increase</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="number">12</span>
+                            <span class="desc">Devices Synced</span>
+                        </div>
+                    </div>
+                    <ul class="tech-stack">
+                        <li>Cellario</li>
+                        <li>Robotics</li>
+                        <li>Workflow Optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-card reverse">
+                <div class="case-visual">
+                    <img src="single-use.jpg" alt="Single Use Assembly" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>Bioprocess Fixture Design (PAT)</h3>
+                    <p class="role">Regeneron (2024) | Role: Manufacturing Engineering Intern</p>
+                    <p><strong>The Challenge:</strong> Integrating optical sensors for protein measurement required sterile tubing, creating cleaning and sterilization burdens.</p>
+                    <p><strong>The Solution:</strong> Engineered a single-use fixture in SolidWorks using GD&T and DFMA principles, integrating optical sensors for inline measurement and contributing to $8M in savings.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="number">$8M</span>
+                            <span class="desc">Proj. Annual Savings</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="number">PAT</span>
+                            <span class="desc">Sensor Integration</span>
+                        </div>
+                    </div>
+                    <ul class="tech-stack">
+                        <li>SolidWorks</li>
+                        <li>GD&T</li>
+                        <li>GMP</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-visual">
+                    <img src="sers.jpg" alt="Raman Spectrometer" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>Rapid Antibiotic Susceptibility (SERS)</h3>
+                    <p class="role">Ziegler Lab (BU) | Role: Researcher & Data Analyst</p>
+                    <p><strong>The Challenge:</strong> Standard testing takes 24-48 hours. Reducing this time is critical to improving survival rates for bacterial infections like sepsis.</p>
+                    <p><strong>The Solution:</strong> Developed a Raman Spectroscopy methodology published in <em>Talanta</em>. Used Python analysis to reduce testing time from 48 to under 4 hours.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="number">&lt;4 hrs</span>
+                            <span class="desc">Time (vs 48hrs)</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="number">Pub</span>
+                            <span class="desc">In Talanta</span>
+                        </div>
+                    </div>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Raman Spectroscopy</li>
+                        <li>Laboratory</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-card reverse">
+                <div class="case-visual">
+                    <img src="centerless_polishing.jpeg" alt="Centerless Polishing Machine" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>Process Optimization: Centerless Polishing</h3>
+                    <p class="role">Client: Vita Needle | Role: Lead Engineer</p>
+                    <p><strong>The Challenge:</strong> The client required a standardized finish evaluation and higher throughput for 5-10 ft tubes.</p>
+                    <p><strong>The Solution:</strong> Optimized centerless polishing parameters and introduced an automated visual QC subsystem using Python/SSIM inspection logic to increase throughput 6x.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="number">6x</span>
+                            <span class="desc">Throughput Increase</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="number">Auto</span>
+                            <span class="desc">Visual QC Logic</span>
+                        </div>
+                    </div>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Process Improvement</li>
+                        <li>AI Vision</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-card">
+                <div class="case-visual">
+                    <img src="pizza.jpeg" alt="Pizza Slicing Machine" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>Robotics: 3-DOF Food Processing Unit</h3>
+                    <p class="role">Electromechanical Design Project | Role: Mechanical Lead</p>
+                    <p><strong>The Challenge:</strong> Develop a fully autonomous slicing system requiring 0.1 mm positional accuracy.</p>
+                    <p><strong>The Solution:</strong> Designed a custom 3-DOF mechanism and developed control logic in Arduino with G-Code for repeatable slicing performance.</p>
+                    <div class="metrics">
+                        <div class="metric-item">
+                            <span class="number">0.1mm</span>
+                            <span class="desc">Positional Accuracy</span>
+                        </div>
+                        <div class="metric-item">
+                            <span class="number">100%</span>
+                            <span class="desc">Repeatability</span>
+                        </div>
+                    </div>
+                    <ul class="tech-stack">
+                        <li>SolidWorks Assembly</li>
+                        <li>DFMA</li>
+                        <li>CNC Machining</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="case-study-card reverse">
+                <div class="case-visual">
+                    <img src="rosbot.png" alt="ROSBot" class="project-img">
+                </div>
+                <div class="case-text">
+                    <h3>Autonomous Systems: ROS2 Mobile Platform</h3>
+                    <p class="role">Independent R&D | Role: Systems Integrator</p>
+                    <p><strong>The Challenge:</strong> Create a mobile robot capable of autonomous navigation and obstacle detection.</p>
+                    <p><strong>The Solution:</strong> Integrated ultrasonic and IMU sensors for localization and implemented OpenCV routines for line-following within a ROS2 stack.</p>
+                    <ul class="tech-stack">
+                        <li>ROS2</li>
+                        <li>OpenCV</li>
+                        <li>Python</li>
+                        <li>Motion Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light section-pad">
+        <div class="container">
+            <h2 class="section-title">Technical Capabilities</h2>
+            <div class="skills-grid">
+                <div class="skill-col">
+                    <h4>Manufacturing & Process</h4>
+                    <ul>
+                        <li>DFMA & Lean Manufacturing</li>
+                        <li>Root Cause Analysis (RCA)</li>
+                        <li>Statistical Process Control (SPC)</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h4>Design & Tooling</h4>
+                    <ul>
+                        <li>SolidWorks (Sim & Assemblies)</li>
+                        <li>AutoCAD & Fusion 360</li>
+                        <li>CNC Machining & 3D Printing</li>
+                        <li>Fixture Design</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h4>Data & Logic</h4>
+                    <ul>
+                        <li>Python & MATLAB</li>
+                        <li>LabVIEW & JMP</li>
+                        <li>C & Arduino IDE</li>
+                        <li>G-Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-pad">
+        <div class="container split-layout">
+            <div class="about-left">
+                <h2 class="section-title-left">About Me</h2>
+                <p class="lead">I am a Mechanical Engineering student at Boston University, focused on bridging the gap between mechanical design and intelligent control systems.</p>
+                <p>My work combines rigorous simulation with hands-on manufacturing implementation to solve complex automation challenges.</p>
+
+                <div class="education-block">
+                    <h4>Education</h4>
+                    <p><strong>Boston University College of Engineering</strong><br>
+                        B.Sc., Mechanical Engineering (Robotics Concentration)<br>
+                        Expected May 2026 | GPA: 3.99/4.00</p>
+                </div>
+            </div>
+
+            <div class="about-right" id="experience">
+                <h3 class="sub-title">Professional Experience</h3>
+                <div class="job-card">
+                    <h4>Regeneron Pharmaceuticals</h4>
+                    <span class="date">May 2025 – Aug 2025</span>
+                    <p class="job-role">Automation Engineering Intern</p>
+                    <p>Optimized robotic liquid handling workflows using Cellario, increasing throughput 4x and improving bioassay pass rates by 25%.</p>
+                </div>
+                <div class="job-card">
+                    <h4>Regeneron Pharmaceuticals</h4>
+                    <span class="date">May 2024 – Aug 2024</span>
+                    <p class="job-role">Manufacturing Engineering Intern</p>
+                    <p>Designed single-use fixtures integrating PAT sensors for inline measurement, contributing to $8M in projected savings.</p>
+                </div>
+
+                <h3 class="sub-title" style="margin-top: 50px;">Research Experience</h3>
+                <div class="job-card">
+                    <h4>Ziegler Laboratory (BU)</h4>
+                    <span class="date">Jan 2023 – May 2025</span>
+                    <p class="job-role">Undergraduate Research Assistant</p>
+                    <p>Conducted R&D process testing using Surface-Enhanced Raman Spectroscopy (SERS) to reduce susceptibility analysis from 48 to under 4 hours.</p>
+                    <p style="margin-top:5px; color:#f97316; font-weight:700;">&#9733; Co-authored publication in <em>Talanta</em>.</p>
+                </div>
+                <div class="job-card">
+                    <h4>Albro Laboratory (BU)</h4>
+                    <span class="date">Jan 2024 – May 2024</span>
+                    <p class="job-role">Undergraduate Research Assistant</p>
+                    <p>Supported mechanical testing of cartilage and designed 3D-printed fixtures for Instron tensile testing to ensure sample alignment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2026 Allen Fraiman. New York, NY.</p>
+            <p><a href="mailto:allen.fraiman@gmail.com">allen.fraiman@gmail.com</a> | <a href="http://www.afraiman.com">www.afraiman.com</a></p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const icon = menuBtn.querySelector('i');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+            } else {
+                icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
             }
-
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-<script>
-
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-250px";
-        }
-
-    </script>
-<script>
-        document.querySelectorAll('.experience-header').forEach(header => {
-            header.addEventListener('click', () => {
-                const item = header.parentElement;
-                item.classList.toggle('open');
-            });
         });
     </script>
-<script>
-        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
-            arrow.addEventListener('click', () => {
-                const details = arrow.closest('.experience-item').querySelector('.experience-details');
-                const isVisible = details.style.display === 'block';
-                details.style.display = isVisible ? 'none' : 'block';
-            });
-        });
-    </script>
-<script>
-        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
-            arrow.addEventListener('click', () => {
-                const item = arrow.closest('.experience-item');
-                const details = item.querySelector('.experience-details');
-                item.classList.toggle('open');
-                if (item.classList.contains('open')) {
-                    details.style.display = 'block';
-                } else {
-                    details.style.display = 'none';
-                }
-            });
-        });
-    </script>
-<script>
-        document.querySelectorAll('.toggle-arrow').forEach(arrow => {
-            arrow.addEventListener('click', () => {
-                const item = arrow.closest('.experience-item');
-                item.classList.toggle('open');
-            });
-        });
-    </script>
-<script>
-        document.querySelectorAll('.skill-tag').forEach(tag => {
-            tag.addEventListener('click', () => {
-                const skill = tag.dataset.skill;
-                const projects = document.querySelectorAll('.work');
-                projects.forEach(project => {
-                    const skills = project.dataset.skills ? project.dataset.skills.split(',') : [];
-                    if (skills.includes(skill)) {
-                        project.style.display = 'block';
-                    } else {
-                        project.style.display = 'none';
-                    }
-                });
-            });
-        });
-        document.querySelectorAll('.work').forEach(p => p.style.display = 'block');
-}</script>
 </body>
 </html>
